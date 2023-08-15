@@ -71,12 +71,12 @@ for i in aBinaryList:
     greenS = int(greenS,2)
     blueS = int(blueS,2)
     
+    #Apply to Range (0-255)
     redV = round(redS/redM * 255)
     greenV = round(greenS/greenM * 255)
     blueV = round(blueS/blueM * 255)
-
+	
+	#Write to File each color
     colorFile.write(str(redV) + " " + str(greenV) + " " + str(blueV) + " " + "Color\n")
-    #Debug
-    print(str(redV) + " " + str(greenV) + " " + str(blueV) + " " + "Color")
 
 colorFile.close()
