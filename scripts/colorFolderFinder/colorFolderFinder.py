@@ -2,7 +2,7 @@ from PIL import Image
 import sqlite3
 import os
 
-server = r'C:\Users\drake\Desktop\colordb.db'
+server = r'link2sqldatabasefile.db'
 
 def rgb2Hex(r,g,b):
     return f'#{r}{g}{b}'
@@ -29,7 +29,7 @@ def insert_into (dbname, tblname, cols, vals):
     cur.close()
 
 
-path = r"C:\Users\drake\Desktop\200"
+path = r"pathtofolderwithpictures"
 dir_list = os.listdir(path)
 print(dir_list)
 
